@@ -1,0 +1,82 @@
+/* LESS Document */
+/*@import "bootstrap/bootstrap.less";*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* color code */
+#forgetpassword {
+  background: #22BBF4;
+}
+#forgetpassword .vertical-center {
+  margin:20px;
+  display: flex;
+  align-items: center;
+}
+#forgetpassword .loginbox {
+  background: #009FDA;
+  overflow: hidden;
+  max-width: 400px;
+  padding-bottom: 40px;
+  padding-top: 40px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#forgetpassword .loginbox .logocont {
+  padding: 60px 0 40px;
+}
+#forgetpassword .loginbox .bgcolor1 {
+  height: 5px;
+  background: #00ACED;
+}
+#forgetpassword .loginbox .bgcolor2 {
+  height: 5px;
+  background: #D5DE22;
+}
+#forgetpassword .loginbox .bgcolor3 {
+  height: 5px;
+  background: #EB008A;
+}
+#forgetpassword .loginbox input {
+  background: #22BBF4;
+  border: none;
+  color: #fff;
+}
+#forgetpassword .loginbox .form-group {
+  color: #fff;
+  margin-bottom: 5px;
+}
+#forgetpassword .loginbox .form-control::-webkit-input-placeholder {
+  color: #EEE;
+}
+#forgetpassword .loginbox .form-control:-moz-placeholder {
+  color: #EEE;
+}
+#forgetpassword .loginbox .form-control::-moz-placeholder {
+  color: #EEE;
+}
+#forgetpassword .loginbox .form-control:-ms-input-placeholder {
+  color: #EEE;
+}
+#forgetpassword .loginbox .errors {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #a80d0d;
+}
+#forgetpassword .loginbox .btn-login {
+  color: #FFF;
+  background-color: #009FDA;
+  border-color: #FFF;
+  border-width: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#forgetpassword .loginbox .btn-login:hover {
+  color: #fff;
+  background-color: #EB008A;
+  border-color: #EB008A;
+}

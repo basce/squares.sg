@@ -1,0 +1,17 @@
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=307]
+
+#RewriteCond %{REQUEST_METHOD} POST
+#RewriteRule ^ - [L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^.*\.(less|jpg|css|js|gif|png)$ [NC]
+
+RewriteRule ^.*$ ./index.php [QSA,L]

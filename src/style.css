@@ -1,0 +1,711 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========================================================
+    Template Name: MiniPo Minimal Portfolio Template
+    Created By: RegalTheme
+    Envato Profile: https://themeforest.net/user/regaltheme
+    Website: http://regaltheme.com
+    Description: MiniPo is Fully Responsive Minimal Portfolio Template with awesome features.
+    Version: v1.1
+    Support: http://regaltheme.com/support
+============================================================*/
+
+
+/* google fonts  
+========================== 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+*/
+
+ 
+/* css files
+====================== */
+@import url('assets/css/bootstrap.min.css');
+@import url('assets/css/material-design-iconic-font.min.css');
+@import url('assets/css/venobox.css');
+@import url('assets/css/slick.min.css');
+@import url('assets/css/style.css');
+@import url('assets/css/responsive.css');
+
+/* VOTE HEART ICON
+========================== */
+@font-face {
+  font-family: 'Icons';
+  src: url('assets/fonts/open-iconic.eot');
+  src: url('assets/fonts/open-iconic.eot?#iconic-sm') format('embedded-opentype'), url('assets/fonts/open-iconic.woff') format('woff'), url('assets/fonts/fonts/open-iconic.ttf') format('truetype'), url('assets/fonts/open-iconic.otf') format('opentype'), url('assets/fonts/open-iconic.svg#iconic-sm') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.oi[data-glyph=heart]:before { content:'\e077'; }
+.oi[data-glyph].oi-text-replace {
+  font-size: 0;
+  line-height: 0;
+}
+
+.oi[data-glyph].oi-text-replace:before {
+  width: 1em;
+  text-align: center;
+}
+
+.oi[data-glyph]:before {
+  font-family: 'Icons';
+  display: inline-block;
+  speak: none;
+  line-height: 1;
+  vertical-align: baseline;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.oi[data-glyph]:empty:before {
+  width: 1em;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+.oi[data-glyph].oi-align-left:before {
+  text-align: left;
+}
+
+.oi[data-glyph].oi-align-right:before {
+  text-align: right;
+}
+
+.oi[data-glyph].oi-align-center:before {
+  text-align: center;
+}
+
+.oi[data-glyph].oi-flip-horizontal:before {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.oi[data-glyph].oi-flip-vertical:before {
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(1, -1);
+}
+.oi[data-glyph].oi-flip-horizontal-vertical:before {
+  -webkit-transform: scale(-1, -1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, -1);
+}
+
+/* FACEBOOK LOGIN ICON
+========================== */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("assets/fonts/fa-brands-400.eot");
+  src: url("assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fa-brands-400.woff2") format("woff2"), url("assets/fonts/fa-brands-400.woff") format("woff"), url("assets/fonts/fa-brands-400.ttf") format("truetype"), url("assets/fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+	font-family: 'Font Awesome 5 Brands';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  float:left;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1.15em; 
+  margin:0 .5em 0 0;
+  font-size:1.255em
+  }
+
+.fa-facebook:before {
+  content: "\f09a"; }
+
+.fa-facebook-f:before {
+  content: "\f39e"; }
+
+.fa-facebook-messenger:before {
+  content: "\f39f"; }
+
+.fa-facebook-square:before {
+  content: "\f082"; }
+
+
+
+
+/* FUTURA fonts
+========================== */
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('assets/fonts/FuturaPT-Book.eot');
+    src: url('assets/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Book.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Book.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/assets/fonts/FuturaPT-HeavyObl.eot');
+    src: url('assets/fonts/FuturaPT-HeavyObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-HeavyObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-HeavyObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-HeavyObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-HeavyObl.svg#FuturaPT-HeavyObl') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-Medium.eot');
+    src: url('assets/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Medium.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Medium.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Medium.svg#FuturaPT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-Light.eot');
+    src: url('assets/fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Light.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Light.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Light.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Light.svg#FuturaPT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-Bold.eot');
+    src: url('assets/fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Bold.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Bold.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-MediumObl.eot');
+    src: url('assets/fonts/FuturaPT-MediumObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-MediumObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-MediumObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-MediumObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-MediumObl.svg#FuturaPT-MediumObl') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-LightObl.eot');
+    src: url('assets/fonts/FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-LightObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-LightObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-LightObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-LightObl.svg#FuturaPT-LightObl') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('assets/fonts/FuturaPT-DemiObl.eot');
+    src: url('assets/fonts/FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-DemiObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-DemiObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-DemiObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-DemiObl.svg#FuturaPT-DemiObl') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('assets/fonts/FuturaPT-Demi.eot');
+    src: url('assets/fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Demi.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Demi.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Demi.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Demi.svg#FuturaPT-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-BoldObl.eot');
+    src: url('assets/fonts/FuturaPT-BoldObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-BoldObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-BoldObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-BoldObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-BoldObl.svg#FuturaPT-BoldObl') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('assets/fonts/FuturaPT-Heavy.eot');
+    src: url('assets/fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-Heavy.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-Heavy.woff') format('woff'),
+        url('assets/fonts/FuturaPT-Heavy.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-Heavy.svg#FuturaPT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Extra';
+    src: url('assets/fonts/FuturaPT-ExtraBold.eot');
+    src: url('assets/fonts/FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-ExtraBold.woff') format('woff'),
+        url('assets/fonts/FuturaPT-ExtraBold.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-ExtraBold.svg#FuturaPT-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Extra';
+    src: url('assets/fonts/FuturaPT-ExtraBoldObl.eot');
+    src: url('assets/fonts/FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/FuturaPT-ExtraBoldObl.woff2') format('woff2'),
+        url('assets/fonts/FuturaPT-ExtraBoldObl.woff') format('woff'),
+        url('assets/fonts/FuturaPT-ExtraBoldObl.ttf') format('truetype'),
+        url('assets/fonts/FuturaPT-ExtraBoldObl.svg#FuturaPT-ExtraBoldObl') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+
+/* CUSTOMISATION FOR 54 SQUARES MICROSITE 
+=========================================== */
+ body {
+     font-family: 'Futura PT', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: #000000;
+     background-color: #ffffff;
+     overflow-x: hidden;
+     -webkit-text-size-adjust: 100%;
+     -webkit-overflow-scrolling: touch;
+     -webkit-font-smoothing: antialiased;
+	 letter-spacing:1px
+ }
+ html {
+     font-family: 'Futura PT', sans-serif;
+ }
+ 
+ a {
+     color: #ec080e;
+     font-family: 'Futura PT', sans-serif;
+     font-weight: 400;
+     text-transform: none;
+     line-height: 1;
+ }
+ 
+ p {
+     font-family: 'Futura PT', sans-serif;
+     color: #000000;
+     font-size: 16px;
+     line-height: 22px;
+     font-weight: 400;
+     margin: 0;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: 'Futura PT Demi', sans-serif;
+     font-weight: 300;
+     color: #333333;
+     margin: 0 0 10px;
+     text-transform: capitalize;
+ }
+ 
+ .header-style-1 .logo img {min-height:none; max-width:351px; }
+  .header-style-1 .logo-mb img {max-width:162px; width:100%;} 
+    .header-style-1 .logo-mb {display:none} 
+  
+ 
+ .section-padding {padding:0 0 40px 0}
+ 
+ .portfolio-menu.hover-1 li:after, .menu-hover-1 li a:after {top:68px; }
+ .portfolio-menu.hover-1 li.active::after, .portfolio-menu.hover-1 li:hover:after, .menu-hover-1 li:hover a:after, .mainmenu.menu-hover-1 li a.active::after {width:30px}
+ 
+ .page-title h1, .page-title h4, .portfolio-area .project-title p {color: #000000; font-size:20px; width:68%; line-height:1.5em}
+ .page-title h1 {line-height:1.2em} 
+ h1.mb-5 { font-size:24px; letter-spacing:12px; text-transform:uppercase; font-family:'Futura PT Demi', sans-serif; line-height:1.3em; display:block; width:100%;}
+ 
+ h1.mb-5 .position {display:inline-block; height:28px; position:relative; line-height:1em; vertical-align:bottom}
+ 
+.single-portfolio img {max-width:370px; max-height:370px; /*border-radius:10px 10px 0 0*/}
+
+.three-style5 .project-title h4, .three-style4 .project-title h4 {font-size:1.3em; margin-bottom:.25em}
+.portfolio-seven .project-title p {font-size:1.05em; margin-bottom:.5em; width:100%;}
+ .overlay:before {background:rgba(247, 247, 247, .20)}
+ .zoom-icon {left:60%; margin-left:-60px}
+ .mainmenu li a {font-weight:500}
+
+.white-bg {background:#f2f2f2 none repeat scroll 0 0}
+
+.three-style4 .project-title {padding:20px 10px; /*border-radius:0 0 10px 10px;*/ border:1px solid #e0e0e0; text-align:center; border-top:0; position:relative; overflow:hidden} 
+
+.btn {border:1px solid #c3c3c3; text-transform:uppercase}
+
+.bg-color-2 { background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1); 
+ }
+
+.bg-color-2 .container {background:url(assets/img/visual-splash.png) top center no-repeat; background-size:contain; width:100%;}
+
+.ptb-110 {padding-top:0}
+
+.ptb-110 img {width:100%; max-width:430px; margin-bottom:2.5em}
+
+.mainmenu li a {font-size:13px;}
+
+.portfolio-menu {padding:0px 0 30px; text-align:center}
+.portfolio-menu select {-webkit-appearance:menulist; padding:2px 8px; border-color:#c7c7c7; border-radius:2px; outline:none; background:none; font-size:16px}
+.portfolio-menu label {font-size:18px; font-weight:500}
+
+.project-title p.vote {font-size:1em; font-weight:300; margin-top:.5em}
+
+p.vote .vote-btn {font-size:1em; font-weight:500; color:#000000; text-transform:none; display:inline-block; text-decoration:none}
+p.vote .vote-btn:hover {color:#ec080e; } 
+p.vote .voted {color:#ec080e;}
+
+p.vote .vote-icon {font-size:1em; font-weight:800; line-height:1.1em; display:inline-block; height:15px; vertical-align:bottom; position:relative}
+ 
+
+.number-votes {display:inline-block; font-weight:500}
+
+footer .left p, footer .left p a {font-family: 'Futura PT', sans-serif; font-size:13px; color:#000000}
+
+footer .left p a {font-weight:500}
+
+.three-style4 .hover-1 hr.line {margin:10px auto auto; width:30px}
+
+.mainmenu li a {color:#7b7b7b; letter-spacing:6px; text-transform:uppercase}
+.mainmenu li a:hover {color:#000000; } 
+.portfolio-menu.hover-1 li:after, .menu-hover-1 li a:after {background:#ec080e none repeat scroll 0 0}
+
+.project-title.light-bg {background-color:#ffffff}
+
+.portfolio-area {background-color:#f2f2f2}
+
+.light-bg {background-color:#f2f2f2; }
+
+#scrollUp {bottom:62px; border-radius:2px}
+
+.single-portfolio {position:relative}
+
+.home .mb-15 {font-size:17px; margin:1em auto 0; width:45%; line-height:1.5em }
+
+
+/* SUBMISSION DETAIL PAGE */
+
+.pages-header.submission-detail {background:url(assets/img/artwork/almost-white-1.jpg) center center no-repeat; background-size:cover; position:relative; z-index:0}
+
+.submission-detail.bg-color-2 .container {background:none; max-width:1200px}
+.submission-detail.light-bg {background-color:#ffffff}
+
+.submission-detail .overlay {width:100%; height:100%; display:block; position:absolute; top:0; left:0; z-index:0}
+.submission-detail .overlay.dark-1:before {background-color:rgba(0, 0, 0, .3)}
+.submission-detail .text-left {z-index:999; position:relative}
+.submission-detail .mb-15, .submission-detail .mb-5 {color:#ffffff; }
+.submission-detail .mb-15 {letter-spacing:3px; font-size:2.35em; font-weight:300; margin-bottom:.2em}
+
+
+.overlay.dark-1:before {background-color:rgba(0, 0, 0, .5)}
+
+.submission-detail .ptb-110 {padding:80px 0 80px}
+.submission-detail.section-padding {padding:80px 0}
+.submission-detail .pt-40 {padding-top:96px}
+
+.portfolio-image img {min-width:650px;}
+
+.submission-detail .col-md-7 p.vote {margin:1.2em 0 1em; font-size:17px}
+.submission-detail .col-md-7 p.vote .vote-icon {font-size:1em; height:18px; }
+.portfolio-info h2 {margin-bottom:.85em}
+.submission-detail .col-md-7 p.vote .vote-btn, p.vote .number-votes {font-size:1em; }
+ p.vote .number-votes {color:#818181 }
+ 
+.work-info li > span {color:#333333; font-size:18px; width:60px; line-height:1.3em}
+.work-info > li p {color:#333333; font-size:18px}
+.work-info > li .name {font-size:20px; font-weight:bold}
+.work-info .profile-desc {margin:.65em 0 1em; padding:0 0 1.25em; border-bottom:1px #e0e0e0 dotted}  
+
+.pages-header.winners .container, .pages-header.about .container, .pages-header.rules .container, .pages-header.terms .container {overflow:visible; position:relative}
+.pages-header.winners .main-visual, .pages-header.terms .main-visual, .pages-header.about .main-visual, .pages-header.rules .main-visual {position:absolute; bottom:-.5em; right:-7.78em; display:block; margin-bottom:0; display:block}
+.pages-header.winners .main-visual-mb, .pages-header.terms .main-visual-mb, .pages-header.about .main-visual-mb, .pages-header.rules .main-visual-mb {position:absolute; bottom:-.5em; right:-7.78em; display:block; margin-bottom:0; display:block; }
+
+
+/* WINNERS PAGE */
+.pages-header.winners {background:url(assets/img/artwork/almost-white-1.jpg) center center no-repeat; background-size:cover;position:relative; background:none; border-bottom:1px #dcdcdc solid; overflow:visible;}
+
+.winners .overlay.dark-1:before {background-color:rgba(0, 0, 0, .3)}
+.winners.bg-color-2 .container {background:none; max-width:1200px}
+.winners .mb-15 {letter-spacing:3px; font-size:2.35em; font-weight:300; margin-bottom:.5em}
+
+.winners .ptb-110 {padding:80px 0 80px}
+
+.winner.portfolio-area {background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1);}
+.winner.section-padding {padding:80px 0}
+.winner .sub-headline {margin:80px 0 30px; letter-spacing:2px; font-size:24px}
+
+p.winner-tag {width:80px; height:80px; position:absolute; display:inline-block; top:0; right:0;} 
+p.winner-tag .triangle {position:absolute; top:0; right:0; z-index:99; vertical-align:middle; z-index:9; text-align:center; width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 80px 80px 0;
+border-color: transparent #000000 transparent transparent;
+line-height: 0px;
+_border-color: #ffffff #000000 #ffffff #ffffff;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#ffffff');
+
+}
+p.winner-tag .number {width:100%; position:absolute; display:block; text-align:center; color:#ffffff;top: .4em; right:-.5em; font-size:38px; z-index:99; }
+
+
+
+/* RULES PAGE */
+.pages-header.rules {background:url(assets/img/artwork/almost-white-1.jpg) center center no-repeat; background-size:cover;position:relative; background:none; border-bottom:1px #dcdcdc solid; margin-top:0}
+.rules .overlay.dark-1:before {background-color:rgba(0, 0, 0, .3)}
+.rules.bg-color-2 .container {background:none; max-width:1200px}
+
+.rules .mb-15 {letter-spacing:3px; font-size:2.35em; font-weight:300; margin-bottom:.5em}
+
+.rules.portfolio-area {background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1);}
+.rules .ptb-110 {padding:80px 0 80px}
+.rules.section-padding {padding:80px 0}
+
+.rules .text-left p,  .rules .text-left ol {margin:0 0 1em}
+.rules .text-left li  {margin:0 0 1em}
+
+
+
+/* ABOUT PAGE */
+.pages-header.about {background:url(assets/img/artwork/almost-white-1.jpg) center center no-repeat; background-size:cover;position:relative; background:none; border-bottom:1px #dcdcdc solid; margin-top:0}
+.about .overlay.dark-1:before {background-color:rgba(0, 0, 0, .3)}
+.about.bg-color-2 .container {background:none; max-width:1200px}
+
+.about .mb-15 {letter-spacing:3px; font-size:2.35em; font-weight:300; margin-bottom:.2em}
+.about .mb-5 {margin-bottom:.65em}
+
+.about.portfolio-area {background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1);}
+.about .ptb-110 {padding:80px 0 80px}
+.about.section-padding {padding:80px 0}
+
+.about .text-left p {margin:.5em 0 1em}
+
+.about .container img {width:auto; margin:2.5em 0 2em}
+
+.message {width:60%; border:#333333 2px solid; margin:0 auto 3em; padding:2em; float:none}
+.container.nafa, .container.se {border-top:#d0d0d0 1px solid; margin:2em auto 2em}
+
+/* TERMS PAGE */
+.pages-header.terms {background:url(assets/img/artwork/almost-white-1.jpg) center center no-repeat; background-size:cover;position:relative; background:none; border-bottom:1px #dcdcdc solid}
+.terms .overlay.dark-1:before {background-color:rgba(0, 0, 0, .3)}
+.terms.bg-color-2 .container {background:none; max-width:1200px}
+
+.terms .mb-15 {letter-spacing:3px; font-size:2.35em; font-weight:300; margin-bottom:.2em}
+.terms .mb-5 {margin-bottom:.5em}
+
+.terms.portfolio-area {background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1);}
+.terms .ptb-110 {padding:80px 0 80px}
+.terms.section-padding {padding:80px 0}
+ .terms .text-left ol {margin:0 0 .65em}
+.terms .text-left li  {margin:0 0 .65em; font-size:15px}
+.terms .text-left ul li  {list-style:disc; list-style-position:outside; font-size:15px; margin-bottom:.25em}
+
+.terms .text-left ol li ul {margin:.5em 0 .5em 3em}  
+
+.terms h4 {margin:0 0 1em}
+
+.terms .text-left {margin-bottom:2em}
+
+.lightbox-message {display:block; z-index:99999; display:block; border:1px solid #000000; width:100%; height:100vh; position:fixed; bottom:0; top:0; left:0; background:rgba(23, 23, 23, 0.75); text-align:center; opacity:1}
+.message-content {background:#fff; width:100%; margin:0 auto 0; padding:50px 30px; max-width:650px; border-radius:2px; position: absolute; left: 50%; top: 50%; 
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);}
+.vbox-overlay .message-content {cursor:default}
+.message-content h2 {margin:0 auto .65em; font-size:26px}
+.message-content p {font-size:18px; line-height:1.5em; width:100%; margin:0 0 1em; position:relative}
+.message-content h3 {font-size:18px; line-height:1.5em; width:100%; margin:0 0 1em; position:relative}
+
+
+
+.message-content.confirm-details p {margin-bottom:.5em}
+
+.message-content > p:last-child {margin-bottom:0}
+
+.message-content input {width:49.5%; padding:3px 10px; border-radius:2px; border:1px #bdbdbd solid; margin:0 auto .5em}
+
+.message-content .fb-btn {display:inline-block; position:relative; width:auto; margin:.5em auto; background-color:#3f5ba9; padding:5px 15px 6px 15px; color:#ffffff; border-radius:2px; line-height:1.5em}
+.vbox-close {top:0; right:0; position:absolute; width:40px; padding:10px 10px 10px 0}
+
+.message-content .number-votes, .message-content .oi {color:#ec080e}
+.close-btn {display:inline-block; position:relative; width:auto; margin:0 auto; background-color:#000000; padding:0px 12px 0px 12px; color:#ffffff; border-radius:2px; line-height:2em}
+.close-btn:hover {color:#dedede} 
+.close-btn:active, .close-btn:visited {color:#ffffff} 
+input[type=checkbox], input[type=radio] {width:auto}
+.message-content input[type=checkbox] {width:auto; text-align:center; margin:3.5px 6px 5px 0; display:block; float:left}
+label {font-weight:400}
+
+@supports (zoom:2) {
+	input[type="radio"],  input[type=checkbox]{
+	zoom: 1.5;
+	}
+}
+@supports not (zoom:2) {
+	input[type="radio"],  input[type=checkbox]{
+		transform: scale(2);
+		
+	}
+}
+
+.profile-background img {max-width:110px; height:auto!important;}
+.vbox-overlay img {max-width:100%!important}
+
+
+/* RESPONSIVE TWEAK */
+
+
+@media (max-width: 767px), (max-width: 991px) and (min-width: 768px) {
+.navbar-toggle {right:0; border:0 }	
+.mainmenu {text-align:center}	
+.bg-color-2 .container {margin-top:2.5em}
+.ptb-110 img {width:85%;}
+.portfolio-menu.hover-1 li:after, .menu-hover-1 li a:after {top:45px; }
+.navbar-toggle {border-radius:2px}
+/*.main-visual {display:none}
+.main-visual-mb {display:block}*/
+.message-content input {width:80%;}
+
+	}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	/*	 .header-style-1 .logo-mb {display:block; max-width:none}
+  .header-style-1 .logo {display:none;}*/
+	.navbar-toggle {position:relative; right:0; top:0; margin:0;}
+	.header-style-1 .logo img {max-width:280px}
+	.is-sticky .mainmenu .navbar-collapse {top:35px}
+	.header-style-1 .header-top.is-sticky {padding-top:5px; padding-bottom:5px}	
+	}	
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+
+.pages-header.about, .pages-header.winners, .pages-header.rules,  .pages-header.terms, .pages-header.rules {background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1); border-bottom:1px #e4e4e4 solid}
+
+.about .mb-15, .winners .mb-15, .rules .mb-15, .terms  .mb-15 {font-size:1.85em}
+.about .mb-5, .winners .mb-5, .rules .mb-5, .terms .mb-5 {font-size:1.15em; margin-bottom:.45em}
+.page-title h1, .page-title h4, .portfolio-area .project-title p {width:100%;}
+.portfolio-image img {min-width:0}
+.winners.bg-color-2 .container, .submission-detail.bg-color-2 .container, .rules.bg-color-2 .container, .about.bg-color-2 .container, .terms.bg-color-2 .container {width:300px /*width:90%; padding-left:0; padding-right:0*/}
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+.ptb-110 img {width:70%; margin-bottom:1.5em}	
+.navbar-toggle {top:-55px; }
+h1.mb-5 {font-size:21px}
+.ptb-110 {padding-bottom: 50px}
+.three-style4 .project-title h4 {font-size:1.15em; margin-bottom:0}
+.portfolio-seven .project-title p {font-size:1em}
+.three-style4 .project-title {padding:10px}
+.winners.bg-color-2 .container, .submission-detail.bg-color-2 .container, .rules.bg-color-2 .container, .about.bg-color-2 .container, .terms.bg-color-2 .container {width:480px /*width:90%;padding-left:0; padding-right:0*/ }
+
+
+.message {width:95%; margin-bottom:0}
+.about.section-padding, .rules.section-padding, .terms.section-padding, .winner.section-padding, .submission-detail.section-padding {padding:40px 0}
+.container.se {margin-top:2.5em}
+.se-video {width:450px; height:250px } 
+.about .ptb-110, .winners .ptb-110, .rules .ptb-110, .terms .ptb-110 {padding:40px 0}
+
+.submission-detail .pt-40 {padding-top:0}
+
+.single-portfolio img {max-width:none; max-height:none;}
+}
+
+@media (min-width: 768px) {
+.winners.bg-color-2 .container, .submission-detail.bg-color-2 .container, .rules.bg-color-2 .container, .about.bg-color-2 .container, .terms.bg-color-2 .container {width:750px}
+.se-video {width:480px; height:270px }
+.pages-header.winners .main-visual-mb, .pages-header.terms .main-visual-mb, .pages-header.about .main-visual-mb, .pages-header.rules .main-visual-mb {display:none}
+.col-md-7 {width:70%;}
+.col-md-5 {width:30%;}
+.portfolio-image img {min-width:0}
+
+}
+
+@media (min-width: 992px) {
+.winners.bg-color-2 .container, .submission-detail.bg-color-2 .container, .rules.bg-color-2 .container, .about.bg-color-2 .container, .terms.bg-color-2 .container {width:970px}
+.pages-header.winners .main-visual-mb, .pages-header.terms .main-visual-mb, .pages-header.about .main-visual-mb, .pages-header.rules .main-visual-mb {display:none}
+.portfolio-image img {min-width:0}
+
+
+}
+@media only screen and (min-width: 1200px) {
+.winners.bg-color-2 .container, .submission-detail.bg-color-2 .container, .rules.bg-color-2 .container, .about.bg-color-2 .container, .terms.bg-color-2 .container {width:1200px}	
+.se-video {width:560px; height:315px;}
+.pages-header.winners .main-visual-mb, .pages-header.terms .main-visual-mb, .pages-header.about .main-visual-mb, .pages-header.rules .main-visual-mb {display:none}
+.col-md-7 {width:58.33333333%;}
+.col-md-5 {width:41.66666667%;}
+.portfolio-image img {min-width:650px}
+	}
+
+@media (max-width: 767px) {
+	
+	.pages-header.winners .main-visual, .pages-header.terms .main-visual, .pages-header.about .main-visual, .pages-header.rules .main-visual {display:none}
+}

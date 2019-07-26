@@ -1,0 +1,179 @@
+
+/* LESS Document */
+@import "elements.less";
+@import "config.less";
+@media only screen and (max-width: 768px){
+	.mainpg{
+		.mainboard-desktop{
+			.hbexpanded-full{
+				.line{
+					width:242px !important;	
+				}
+			}
+		}	
+	}
+	.mainpg .mainboard-desktop .hbexpanded-full .line{
+		width:242px !important;	
+	}
+}
+
+
+
+@media only screen and (max-width: 767px){
+	.mainpg{
+		.mainboard-desktop{
+			display:none;
+		}
+		.share-container-desktop{
+			display:none;	
+		}
+		.mainboard-mobile{
+			display:block;
+			.leftbox, .rightbox{
+				position:relative;
+				height:190px;
+			}
+			.swiper1{
+				.leftbox{
+					background:url(../images/img1b.jpg) no-repeat;
+					background-size:cover;
+				}
+			}
+			.swiper2{
+				.leftbox{
+					background:url(../images/img2b.jpg) no-repeat;
+					background-size:cover;
+				}
+			}
+			.swiper3{
+				.leftbox{
+					background:url(../images/img3b.jpg) no-repeat;
+					background-size:cover;
+				}
+			}
+			.leftbox{
+				text-align:center;
+				padding-top:82.5px;
+				.title-m{
+					position:relative;
+					font-size:18px;	
+					color:@card-text-color-1;
+					text-transform:uppercase;
+					margin:0 auto;
+					display:inline-block;
+					text-decoration:none !important;
+					span{
+						margin-left:6px;	
+					}
+				}
+			}
+			.rightbox{
+				background-color:@card-bg-color-1;
+				text-align:center;
+				padding:25px 20px;
+				display:table;
+				width:100%;
+				.rightcontent{
+					display:table-cell;
+					vertical-align:middle;	
+				}
+				h3{
+					margin:0 auto;	
+				}
+			}	
+		}
+		.share-container-mobile{
+			display:block;
+			padding:10px 20px;
+			text-align:center;
+			a{
+				margin:10px 10px;
+				padding:10px 50px;	
+			}
+		}
+	}
+	.winnerpg{
+		padding-left:0px;
+		padding-right:0px;
+		h2, h5{	
+			padding-left:10px;
+			padding-right:10px;
+		}
+		.winner-container{
+		}
+		.winner-container1{
+			text-align:left;
+			margin-bottom:0px;
+			padding-bottom:0px;
+			.box-left{
+				float:none;
+				margin:0 auto;
+			}
+			.box-right{
+				max-width:220px;
+				width:100%;
+				padding:15px 0px;
+				float:none;
+				margin:0 auto;
+				.winnerlist{
+					.scroll-pane{
+						height:226px;	
+					}
+					ul{
+						li{
+							width:calc(~"50% - 8px");
+							background:url(../images/icon4-big.png) no-repeat;
+							span{
+								padding-top:3px;	
+							}
+							img{
+								width:89.5px;
+								height:89.5px;	
+							}
+							a{
+								width:89.5px;
+								height:89.5px;	
+							}
+						}
+						li:nth-child(odd){
+							margin:0px 12px 18px 0px !important;	
+						}
+						li:nth-child(even){
+							margin:0px 0px 18px 0px !important;
+						}
+					}
+				}
+			}
+		}
+		.winner-container2{
+			.content-container{
+				max-width:220px;
+				margin:0 auto;
+				.prize_cont{
+					width:220px;	
+				}
+				ul{
+					padding-right:20px;
+					li{
+						padding:0px 0px;
+						span{
+							float:none;
+							display:block;
+							width:100%;
+							line-height:10px;
+							padding-top:10px;
+							padding-bottom:10px;
+						}
+						span:nth-child(2){
+							
+							border-top:1px solid;
+							border-bottom:1px solid;
+							border-color:@winner-text-border-color-1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

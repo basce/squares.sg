@@ -1,0 +1,82 @@
+/* LESS Document */
+/*@import "bootstrap/bootstrap.less";*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* color code */
+#resetpassword {
+  background: #22BBF4;
+}
+#resetpassword .vertical-center {
+  margin:20px;
+  display: flex;
+  align-items: center;
+}
+#resetpassword .loginbox {
+  background: #009FDA;
+  overflow: hidden;
+  max-width: 400px;
+  padding-bottom: 40px;
+  padding-top: 40px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#resetpassword .loginbox .logocont {
+  padding: 60px 0 40px;
+}
+#resetpassword .loginbox .bgcolor1 {
+  height: 5px;
+  background: #00ACED;
+}
+#resetpassword .loginbox .bgcolor2 {
+  height: 5px;
+  background: #D5DE22;
+}
+#resetpassword .loginbox .bgcolor3 {
+  height: 5px;
+  background: #EB008A;
+}
+#resetpassword .loginbox input {
+  background: #22BBF4;
+  border: none;
+  color: #fff;
+}
+#resetpassword .loginbox .form-group {
+  color: #fff;
+  margin-bottom: 5px;
+}
+#resetpassword .loginbox .form-control::-webkit-input-placeholder {
+  color: #EEE;
+}
+#resetpassword .loginbox .form-control:-moz-placeholder {
+  color: #EEE;
+}
+#resetpassword .loginbox .form-control::-moz-placeholder {
+  color: #EEE;
+}
+#resetpassword .loginbox .form-control:-ms-input-placeholder {
+  color: #EEE;
+}
+#resetpassword .loginbox .errors {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #a80d0d;
+}
+#resetpassword .loginbox .btn-login {
+  color: #FFF;
+  background-color: #009FDA;
+  border-color: #FFF;
+  border-width: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#resetpassword .loginbox .btn-login:hover {
+  color: #fff;
+  background-color: #EB008A;
+  border-color: #EB008A;
+}

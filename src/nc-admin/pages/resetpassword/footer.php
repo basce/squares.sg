@@ -1,0 +1,1 @@
+<script>$(document).ready(function(e) {$('#login input[type=text]').focus();});</script>

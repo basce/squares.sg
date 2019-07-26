@@ -1,0 +1,133 @@
+.addnewschool h1, .codepage h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #606060;
+    text-align: center;
+    margin: 0.5em 0;
+    padding-top: 20px;
+}
+.schooltable h1, .codetable h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #606060;
+	text-align: center;
+    margin: 0.5em 0;
+    padding-top: 20px;
+}
+
+.addnewschool .btn, .codepage .btn{
+    color: #4abdfc;
+    background-color: #FFF;
+    border-color: #4abdfc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    outline: none !important;
+}
+
+.addnewschool .btn:hover, .addnewschool .btn:active{
+	background-color: #4abdfc;
+	color: #ffffff;
+}
+
+.codepage .btn:hover, .codepage .btn:active{
+	background-color: #4abdfc;
+	color: #ffffff;
+}
+
+.addnewschool td a{
+	color: #00ACED !important;
+}
+.addnewschool td a:hover{
+	color:rgba(0, 172, 237, 0.7) !important;
+}
+
+#push_left ul a{
+	text-decoration: none !important;
+}
+#push_left > ul > h2{
+	border-bottom: 0px;
+}
+.codepage .glyphicon-plus,.addnewschool .glyphicon-plus{
+	margin-left: 8px;
+}
+
+.codepage{
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #606060;
+}
+
+.codetable{
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #606060;
+}
+
+.addnewschool{
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #606060;
+}
+.schooltable{
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #606060;
+}
+
+
+.codepage .form-horizontal, .addnewschool .form-horizontal{
+	margin:0 auto;
+    max-width: 685px;
+}
+
+.schooltable td a, .codetable td a{
+	color: #4abdfc !important;
+}
+
+.schooltable td a:hover, .codetable td a:hover{
+	color:rgba(0, 172, 237, 0.4) !important;
+}
+input, textarea{
+	outline: none;
+}
+
+#add{
+	margin-left: 10px;
+	text-decoration: none !important;
+}
+
+.display_text{
+	height: 34px;
+    padding: 6px 12px;
+    display:block;
+}
+
+.display_text.redeemed{
+	color:#EB3E3E;
+}
+.display_text.active{
+	color:#3EEB56;
+}
+
+#redemption_form{
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 60px 40px 40px;
+    margin-bottom: 20px;
+    max-width: 685px;
+}
+
+#redemption_form .display_text{
+	font-weight: bold;
+}
+
+#redemption_form .form-horizontal .control-label{
+	text-align:left;
+	color:#8490AD;
+}
+
+#redemption_form .form-group{
+	margin-bottom:7px;
+}
+
+#redemption_form .form-group:nth-child(even) {
+    background:#F4F9FF;
+}

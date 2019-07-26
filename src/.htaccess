@@ -1,0 +1,28 @@
+# MAINTENANCE-PAGE REDIRECT
+<IfModule mod_rewrite.c>
+ ErrorDocument 404 https://storify.me/#404
+
+ RewriteEngine on
+ 
+ RewriteCond %{SCRIPT_FILENAME} !-d
+ RewriteCond %{SCRIPT_FILENAME} !-f
+
+</IfModule>
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ /sitemap.php [L]
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+#enable upload single file up to 256G
+php_value upload_max_filesize 102400M
+php_value post_max_size 102400M
+php_value max_input_time 3600

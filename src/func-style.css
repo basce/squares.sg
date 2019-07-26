@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* Styles below are controlling functioning items */
+
+.invisible-venobutton{
+  opacity: 0;
+  display: block;
+  width:0;
+  height:0;
+  position:fixed;
+  top:50%;
+}
+.vbox-inline{
+	background: none !important;
+	text-align: center;
+}
+.vbox-overlay{
+	max-width:100vw;
+}
+.profile-background{
+	position:relative;
+	background: linear-gradient(to bottom right, red, orange);
+    padding: 9px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.profile-background::before{
+	content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+.profile-background img{
+	border-radius: 50%;
+	position:relative;
+	width:150px;
+	height:150px;
+}
+
+.portfolio-image img{
+  width:650px;
+  max-width:100%;
+  min-width:auto;
+}
+
+.vbox-overlay img{
+  max-width:600px;
+}

@@ -1,0 +1,89 @@
+/* LESS Document */
+/*@import "bootstrap/bootstrap.less";*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* color code */
+#login {
+  background: #22BBF4;
+}
+#login .vertical-center {
+  margin:20px;
+  display: flex;
+  align-items: center;
+}
+#login .loginbox {
+  background: #009FDA;
+  overflow: hidden;
+  max-width: 400px;
+  padding-bottom: 40px;
+  padding-top: 40px;  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#login .loginbox .logocont {
+  padding: 60px 0 40px;
+}
+#login .loginbox .bgcolor1 {
+  height: 5px;
+  background: #00ACED;
+}
+#login .loginbox .bgcolor2 {
+  height: 5px;
+  background: #D5DE22;
+}
+#login .loginbox .bgcolor3 {
+  height: 5px;
+  background: #EB008A;
+}
+#login .loginbox input {
+  background: #22BBF4;
+  border: none;
+  color: #fff;
+}
+#login .loginbox .form-group {
+  color: #fff;
+  margin-bottom: 5px;
+}
+#login .loginbox .form-control::-webkit-input-placeholder {
+  color: #EEE;
+}
+#login .loginbox .form-control:-moz-placeholder {
+  color: #EEE;
+}
+#login .loginbox .form-control::-moz-placeholder {
+  color: #EEE;
+}
+#login .loginbox .form-control:-ms-input-placeholder {
+  color: #EEE;
+}
+#login .loginbox .firsttime{
+  font-size: 0.75em;
+  font-style: italic;
+  color: #333333;
+  margin-top:0.75em;
+}
+#login .loginbox .errors {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #a80d0d;
+  margin-top:0.75em;
+}
+#login .loginbox .btn-login {
+  color: #FFF;
+  background-color: #009FDA;
+  border-color: #FFF;
+  border-width: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#login .loginbox .btn-login:hover {
+  color: #fff;
+  background-color: #EB008A;
+  border-color: #EB008A;
+}

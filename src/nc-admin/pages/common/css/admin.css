@@ -1,0 +1,203 @@
+/************************************************************************************************************************
+COMMON UI STYLES
+************************************************************************************************************************/
+html,body{width:100%;min-height:100%;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-size:14px}
+.logo{width:283px;height:40px;background:url(../images/ui.png) no-repeat 0 0}
+.aligner{display:inline-block;zoom:1;*display:inline;width:1px;height:100%;vertical-align:middle}
+.clearfix{display:block;clear:both}
+input.placeholder{color:#a9a9a9}
+.errors{color:#F00}
+.message{color:#009d56}
+.inlineblock{display:inline-block;zoom:1;*display:inline}
+a.more{display:inline-block;zoom:1;*display:inline;padding:5px 20px;color:#FFF;text-decoration:none}
+.a_btn,.btn{padding:5px 20px;border:0;text-decoration:none;cursor:pointer}
+
+/************************************************************************************************************************
+GENERIC STYLES
+************************************************************************************************************************/
+.clear { clear:both; max-height:0!important}
+.bold {  font-weight:bold;}
+.block { display:block;}
+.hide {display:none;}
+.left, .floatLeft { float:left;}
+.right, .floatRight { float:right;}
+.justify {text-align:justify}
+.centralize {text-align:center}
+.margin_center { margin:0 auto;}
+.uppercase {text-transform:uppercase}
+.relative {position:relative;}
+.top{vertical-align:top}
+.middle{vertical-align:middle}
+.italic {font-style:italic}
+.cursordefault { cursor:default}
+.cursorpointer { cursor:pointer}
+.inline {didsplay:inline;}
+.inline_block {display:inline-block}
+.ie7 .inline_block{display:inline;zoom:1}
+.italic {font-style:italic}
+.clearfix:before, .clearfix:after {content: " "; display: block; height: 0; overflow: hidden;}
+.clearfix:after {clear: both;}
+.clearfix {clear:both;}
+.superscript{vertical-align:super;font-size:12px}
+.invisible{position:absolute;z-index:-100;visibility:hidden}
+.small{font-size:12px;line-height:1em}
+.em{font-style:italic}
+.align_center{text-align:center}
+.align_left{text-align:left}
+.align_right{text-align:right}
+
+/************************************************************************************************************************
+FORM
+************************************************************************************************************************/
+.frm_standard{padding:35px 25px 55px 25px;background:#AAA}
+.frm_standard h1{margin:0 0 30px 0;color:#FFF;font-size:30px;letter-spacing:-.05em;font-weight:normal}
+.frm_standard input[type=text],.frm_standard input[type=password],.frm_standard input[type=email]{width:100%;box-sizing:border-box;-moz-box-sizing:border-box;margin-bottom:15px;border:0;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-size:18px;padding:18px 18px 18px 50px}
+.ie7 .frm_standard input[type=text],.ie7 .frm_standard input[type=password]{width:80%}
+.frm_standard input[type=text]{background:url(../images/icon-username.gif) no-repeat 18px center #FFF}
+.frm_standard input[type=password]{background:url(../images/icon-password.gif) no-repeat 18px center #FFF}
+.frm_standard select{width:100%;box-sizing:border-box;-moz-box-sizing:border-box;margin-bottom:15px;border:0;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-size:18px;padding:18px 10px 18px 18px}
+.frm_standard input[type=submit]{width:100%;margin-top:5px;padding:16px 0;border:0;background:#e0e0e0;font-size:20px;letter-spacing:.05em}
+
+/************************************************************************************************************************
+LOGIN PAGE
+************************************************************************************************************************/
+#login{text-align:center}
+#login #holder{width:431px;margin:20px auto 0 auto;text-align:center}
+@media screen and (max-width:500px){#login #holder{width:85%}
+}
+#login .logo{margin:0 auto 25px auto}
+#login .errors{margin:0 0 25px 0;font-size:15px}
+
+/************************************************************************************************************************
+ADMIN MAIN PAGE
+************************************************************************************************************************/
+#main{background:#f5f5f5;width:100%;height:100%}
+#main #holder{position:relative;width:95%;min-width:640px;height:auto;margin:0 auto;padding-top:40px}
+#main .logo{float:left}
+#main header.main{margin-bottom:30px}
+@media screen and (max-width:900px){#main #holder{width:100%}
+#main .logo{float:none;margin:0 auto}
+}
+
+/************************************************************************************************************************
+ACCOUNT
+************************************************************************************************************************/
+#account{position:absolute;right:0;color:#FFF;padding:0}
+#account .user{float:right;display:inline-block;zoom:1;*dsplay:inline;padding:10px 22px 10px 50px;background:url(../images/icon-user.png) no-repeat 20px center #AAA;cursor:default}
+#account:hover .user{background:url(../images/icon-user.png) no-repeat 20px center #BBB}
+#account .arrow{padding-left:25px}
+#account .menu{display:none;position:relative;right:0;width:223px;padding:10px 0;background:#e0e0e0}
+.ie7 #account .menu{float:right}
+#account:hover .menu{display:block}
+#account .menu li{list-style:none}
+#account .handle{position:absolute;top:-12px;right:16px;width:0;height:0;border-style:solid;border-width:0 12px 13px 12px;border-color:transparent transparent #e0e0e0 transparent}
+#account .menu a{display:block;padding:7px 10px 7px 55px;color:#494949}
+#account .menu a:hover{text-decoration:none}
+#account .add_user{background:url(../images/icon-add-user.gif) no-repeat 19px center}
+#account .change_password{background:url(../images/icon-change-password.gif) no-repeat 23px center}
+#account .logout{background:url(../images/icon-logout.gif) no-repeat 19px center}
+@media screen and (max-width:900px){#account{position:static;width:95%;margin:20px auto 0 auto;text-align:center}
+#account .user{float:none;display:block;text-align:left}
+#account .arrow{float:right}
+#account .menu{width:100%;text-align:left}
+}
+
+/************************************************************************************************************************
+PANELS
+************************************************************************************************************************/
+#holder .panel{margin-bottom:20px}
+#holder .panel .h{padding:12px 22px;color:#FFF;font-size:22px}
+#holder .panel .h .pagination{float:right}
+.ie7 #holder .pagination{width:50%;margin-top:5px;text-align:right}
+#holder .panel.half{display:inline-block;zoom:1;*display:inline;width:49%}
+#holder .panel .contents{padding:19px;text-align:center}
+#holder .panel .contents article{padding:30px 0 42px 0;color:#494949;text-align:center}
+#holder .panel .contents .btn_report{width:102px;height:148px;margin:32px 10px;padding:75px 8px 0 8px;vertical-align:top;border:0;white-space:normal;font-family:"Open Sans",Helvetica,Arial,sans-serif;line-height:15px}
+#holder .panel .contents article.half{display:inline-block;zoom:1;*display:inline;width:48%}
+#holder .panel .contents article.third{display:inline-block;zoom:1;*display:inline;width:33%}
+#holder .panel .contents article .big{font-size:90px}
+#holder .panel .contents article .extra{margin:-10px 0 -9px 0}
+#holder .panel .frm_report{display:inline}
+#holder .panel .tabs{margin:0;padding:0;text-align:right;font-size:0}
+#holder .panel .tabs li{display:inline-block;zoom:1;*display:inline;list-style:none}
+#holder .panel .tabs a{display:block;padding:12px 25px 12px 65px;color:#FFF;font-size:15px;text-decoration:none}
+#holder .panel .tabs a.showall{background:url(../images/icon-show-all.png) no-repeat 25px center}
+#holder .panel .tabs a.showhidden{background:url(../images/icon-show-hidden.png) no-repeat 25px center}
+#holder .panel .tabs a:hover{background}
+@media screen and (max-width:900px){#holder .panel,#holder .panel.half{float:none;display:block;width:95%;margin:0 auto 20px auto}
+}
+
+/************************************************************************************************************************
+DATA TABLE
+************************************************************************************************************************/
+#holder .tbl_data{width:100%;color:#FFF;text-align:left}
+#holder .tbl_data th{padding:10px 20px}
+#holder .tbl_data th:after{content:" "attr(data-content)}
+#holder .tbl_data th.active{cursor:ns-resize}
+#holder .tbl_data th.active:hover{background-color:#fff;color:#d58c67}
+#holder .tbl_data td{padding:18px 0 18px 15px}
+#holder .tbl_data .more{margin-right:10px}
+#holder .tbl_data .details{display:none}
+#holder .tbl_data_sub{width:95%;margin:0 auto;color:#FFF;text-align:left}
+#holder .tbl_data a.link{color:#FFF}
+#holder .tbl_data a.link:hover{text-decoration:none}
+@media screen and (max-width:900px){#holder .tbl_data{width:100%}
+#holder .tbl_data td{word-break:break-all;padding:5px}
+#holder .tbl_data .nobreak{word-break:normal}
+}
+
+/************************************************************************************************************************
+DATA TABLE PAGINATION
+************************************************************************************************************************/
+#holder .pagination{margin:0;padding:0}
+#holder .pagination li{display:inline-block;zoom:1;*display:inline;list-style:none;margin:0 5px}
+#holder .pagination a{color:#FFF;background:#8a614c;padding:3px 8px;border-radius:25px;font-size:15px;text-decoration:none}
+#holder .pagination a:hover{background:#5f4232}
+#holder .pagination a.active,#holder .pagination a.active:hover{color:#d58c67;background:#8a614c;cursor:default}
+#holder .pagination a.selected,#holder .pagination a.selected:hover{color:#d58c67;background:#8a614c;cursor:default}
+
+/************************************************************************************************************************
+OVERLAY
+************************************************************************************************************************/
+#overlay{display:none;position:fixed;width:100%;height:100%;top:0;left:0;background:rgba(73,73,73,.7);text-align:center;cursor:pointer}
+#overlay .contents{display:none;zoom:1;*display:none;vertical-align:middle;background:#AAA;cursor:default}
+#overlay button{width:382px;padding:20px 0;border:0;color:#494949;font-size:20px;text-align:center}
+#overlay form{width:430px}
+#overlay .contents.add_user{width:430px;height:380px}
+#overlay .contents .errors{margin:0 0 25px 0}
+#overlay .contents.message{width:509px;height:369px;color:#FFF;font-size:30px}
+#overlay .contents.message .inlineblock{width:95%;vertical-align:middle}
+#overlay .contents.message button{margin-top:20px}
+@media screen and (max-width:450px){#overlay .contents.add_user,#overlay .contents.add_user_success{width:90%}
+}
+
+/************************************************************************************************************************
+COLOUR SCHEMES
+************************************************************************************************************************/
+/*RED*/
+#holder .panel.red .h{background:#d58c67}
+#holder .panel.red .contents{background:#e4a989}
+#holder .panel.red .tabs a{background-color:#a56f53}
+#holder .panel.red .tabs a:hover,#holder .panel.red .tabs a.active{background-color:#d58c67}
+#holder .red .tbl_data{background:#b47758}
+#holder .tbl_data .odd td{background:#b47758}
+#holder .tbl_data .even td{background:#e4a989}
+#holder .odd .tbl_data_sub th{background:#e4a989}
+#holder .even .tbl_data_sub th{background:#b47758}
+#holder .even .tbl_data_sub .odd td{background:#b47758}
+#holder .even .tbl_data_sub .even td{background:#e4a989}
+#holder .odd .tbl_data_sub .even td{background:#b47758}
+#holder .odd .tbl_data_sub .odd td{background:#e4a989}
+#holder .red .a_btn,#holder .red .btn{color:#FFF;background:#6f4c39}
+#holder .red .a_btn:hover,#holder .red .btn:hover{background:#95664d}
+/*ORANGE*/
+#holder .panel.orange .h{background:#edc155}
+#holder .panel.orange .contents{background:#fcda87}
+/*BLUE*/
+#holder .panel.blue .h{background:#8fbddd}
+#holder .panel.blue .contents{background:#b7d8eb}
+#holder .panel.blue .contents article{background:#e5f4fc}
+/*GREEN*/
+#holder .panel.green .contents{background:#8fd1b3}
+#holder .panel.green .h{background:#77b398}
+#holder .panel.green .btn_report{background:url(../images/btn-report.png) no-repeat}

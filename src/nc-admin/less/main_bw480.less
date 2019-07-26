@@ -1,0 +1,168 @@
+
+/* LESS Document */
+@import "elements.less";
+@import "config.less";
+@media only screen and (max-width: 480px){
+	body{
+		h2{
+			font-size:30px;
+			line-height:34px !important;
+		}
+	}
+	.sidebtn{
+		top:230px;	
+	}
+	.nav-mobile .button_container{
+		top:26px;	
+	}
+	.logo{
+		background:url(../images/appicon3.png) no-repeat;
+		position:fixed;
+		top:5px;
+		left:5px;
+		z-index:98;
+		width:65px;
+		height:60px;
+	}
+	.navbarbg{
+		z-index:88;
+		background:@nav-mobile-bg-color-1;
+		position:fixed;
+		top:0px;
+		height:75px;
+		width:100%;
+	}
+	.nav-desktop{
+		display:none;	
+	}
+	.nav-mobile{
+		display:block;	
+	}
+	.no-scroll{
+		height:100vh;
+		overflow:hidden;	
+	}
+	.nologopg{
+		padding-top:125px;
+	}
+	.index{
+		.spacer-160{
+			height:125px;	
+		}
+	}
+	.mainpg{
+		.video-container{
+			height:445px;
+			h2{
+				font-size:50px;
+				line-height:52px;
+				max-width:160px;
+				margin:0 auto;
+				display:block;
+				text-align:center;
+				top:160px;
+			}
+			h5{
+				top:323px;
+				max-width:260px;
+				left:0;
+				right:0;
+				margin:0 auto;
+			}
+		}
+	}
+	.prizepg{
+		padding-top:105px;
+		.prize-container{
+			.prize-main{
+				.prize{
+					margin:10px 0px;	
+				}
+			}
+		}
+	}
+	.winnerpg{
+		padding-top:105px;
+	}
+	.htpg{
+		padding-top:105px;
+		.main-content{
+			.box{
+				width:50%;	
+			}
+			.box6{
+				.icon{
+					top:45px;
+				}
+				.btn-container{
+					bottom:45px;	
+				}
+			}
+		}
+	}
+	.pfl-container{
+		.pfl-close{
+			span:first-child{
+				display:none;	
+			}
+			span:last-child{
+				font-size:20px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 375px){
+	.htpg{
+		padding-top:105px;
+		.main-content{
+			.box6{
+				.icon{
+					top:40px;
+				}
+				.btn-container{
+					bottom:40px;	
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.nologopg{
+		padding-top:70px;
+	}
+	.index{
+		.buttonbox{
+			padding-top:40px;	
+		}
+		.spacer-160{
+			height:60px;	
+		}
+	}
+	.htpg{
+		padding-top:105px;
+		.main-content{
+			.box{
+				.copy-text{
+					font-size:12px;
+					line-height:14px;	
+				}
+			}
+			.box6{
+				.icon{
+					top:20px;
+				}
+				.btn-container{
+					bottom:20px;	
+				}
+			}
+		}
+	}
+	.instore-installedpg, .instore-uninstalledpg{
+		padding-top:135px;
+		.buttonbox{
+			padding-top:50px;
+			padding-bottom:80px;	
+		}
+	}
+}

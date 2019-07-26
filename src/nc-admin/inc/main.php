@@ -1,0 +1,11 @@
+<?php
+include_once(__dir__."../../../inc/config.php");
+include_once(__dir__."../../../inc/class.main.php");
+include_once(__dir__."../../../inc/libs/class.admin.php");
+include_once(__dir__."../../../inc/libs/class.fbmanager.php");
+include_once(__dir__."../../../inc/libs/class.reporting.php");
+include_once(__dir__."../../../inc/libs/class.bcw_useragent.php");
+include_once(__dir__."../../../inc/libs/class.ncapputil.php");
+include_once(__dir__."/admin_config.php");
+include_once(__dir__."/class.newreport_render.php");
+?>
